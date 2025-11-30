@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Dates</h1>
+<h2>The getTimezoneOffset() Method</h2>
+
+<p>getTimezoneOffset() returns the time difference between UTC time and local time, in minutes.</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+let diff = d.getTimezoneOffset();
+document.getElementById("demo").innerHTML = diff;
+</script>
+
+</body>
+</html>
