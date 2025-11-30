@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Math</h1>
+<h2>The Math.f16round() Method</h2>
+<p>Math.f16round() returns the nearest 16-bit single precision floating point representation of a number:</p>
+
+<p id="demo"></p>
+
+<script>
+let a = Math.f16round(2.60);
+let b = Math.f16round(2.50);
+let c = Math.f16round(2.49);
+let d = Math.f16round(-2.60);
+let e = Math.f16round(-2.50);
+let f = Math.f16round(-2.49);
+ 
+document.getElementById("demo").innerHTML =
+a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e + "<br>" + f; 
+</script>
+
+</body>
+</html>

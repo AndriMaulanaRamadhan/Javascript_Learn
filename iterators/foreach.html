@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Iterators</h1>
+<h2>The forEach() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an iterator
+const myIterator = Iterator.from("123456789");
+
+// Iterate over all elements
+let text = "";
+myIterator.forEach (function(value) {
+  text += value;
+})
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

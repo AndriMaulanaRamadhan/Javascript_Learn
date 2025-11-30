@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Iterators</h1>
+<h2>The some() Method</h2>
+
+<p>The some() method teturns true if any of the elements in an interator pass a test provided by a function.</p>
+
+<p id="demo"></p>
+
+<script>
+function checkValue(value) {
+  return value > 7;
+}
+
+const myIterator = Iterator.from("123456789");
+let result = myIterator.some(checkValue);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
