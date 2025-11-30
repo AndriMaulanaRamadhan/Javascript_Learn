@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The values() Method</h2>
+
+<p>The values() method returns an iterator with the values of an array.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Create an Iterator
+const list = fruits.values();
+
+// List the Keys
+let text = "";
+for (let x of list) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

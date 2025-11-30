@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The toSpliced() Method</h2>
+
+<p>The toSpliced() method returns an array with added or removed array elements.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, add "Lemon" and "Kiwi"
+const fruits2 = fruits.toSpliced(2, 0, "Lemon", "Kiwi");
+
+document.getElementById("demo").innerHTML = fruits2;
+</script>
+
+</body>
+</html>

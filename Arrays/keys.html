@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The keys() Method</h2>
+
+<p>The keys() method returns an Iterator with the keys of an array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Create an Iterable
+const list = fruits.keys();
+
+// List the Keys
+let text = "";
+for (let x of list) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<p>keys() is not supported in Internet Explorer.</p>
+
+</body>
+</html>
