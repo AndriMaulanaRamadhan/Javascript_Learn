@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Errors</h1>
+<h2>The new Error() Constructor</h2>
+
+<p id="demo"></p>
+
+<script>
+let err = new Error("Failed to load JSON", {cause:"File Error"});
+let text = err.cause + "<br>" + err.message;
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+

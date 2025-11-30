@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Global Methods</h1>
+<h2>The decodeURIComponent() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+let uri = "https://w3schools.com/my test.asp?name=ståle&car=saab";
+let encoded = encodeURIComponent(uri);
+let decoded = decodeURIComponent(encoded);
+
+document.getElementById("demo").innerHTML = "Encoded URI:<br>" + encoded + "<br><br>" + "Decoded URI:<br>" + decoded;
+</script>
+
+</body>
+</html>

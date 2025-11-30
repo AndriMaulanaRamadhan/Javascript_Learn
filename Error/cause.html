@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Errors</h1>
+<h2>The cause Property</h2>
+
+<p>Example befor cause:</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+  // Create a JSON parse failure
+  JSON.parse("blablablabla");
+} catch(err) {
+  let text = err.name + " " + err.message;
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
