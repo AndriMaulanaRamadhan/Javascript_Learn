@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The Object.defineProperties() Method</h2>
+
+<p>This example adds a new property to an object.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+Object.defineProperties(person, {
+  language: {value: "en"},
+  year: {value: "Hello"}
+});
+
+// Display the properties
+document.getElementById("demo").innerHTML = person.language + " " + person.year;
+</script>
+
+</body>
+</html>

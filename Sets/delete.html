@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<h2>The delete() Method</h2>
+<p>The delete() method removes a value from a set.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a new Set
+const letters = new Set(["a","b","c"]);
+
+// Remove Element
+letters.delete("a");
+
+// Display set.size
+document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+</script>
+
+</body>
+</html>

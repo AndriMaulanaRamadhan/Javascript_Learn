@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<h2>The clear() Method</h2>
+
+<p>The clear() method removes all values from a set.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a new Set
+const letters = new Set(["a","b","c"]);
+
+// Clear
+letters.clear();
+
+// Display size
+document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+</script>
+
+</body>
+</html>

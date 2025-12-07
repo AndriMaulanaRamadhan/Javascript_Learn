@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Reflect Object</h1>
+<h2>The set() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const user = {name: "Jan", age: 40};
+
+// Set the value of a Property
+Reflect.set(user, "age", 41);
+
+document.getElementById("demo").innerHTML = "Age is now " + user.age;
+</script>
+
+</body>
+</html>
+
+

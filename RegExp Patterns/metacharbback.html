@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+<h2>The \b Metacharacter</h2>
+
+<p>Search for the characters "LO" in the beginning of a word:</p>
+
+<p>"HELLO, LOOK AT YOU!"</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "HELLO, LOOK AT YOU!"; 
+let pattern = /\bLO/;
+let result = text.search(pattern);
+
+document.getElementById("demo").innerHTML = "Found in position: " + result;
+</script>
+
+</body>
+</html>

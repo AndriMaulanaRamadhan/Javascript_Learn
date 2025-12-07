@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The getOwnPropertyNames() Method</h2>
+
+<p>The Object.The getOwnPropertyNames() returns an array with the properties of an object.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Get Properties
+let props = Object.getOwnPropertyNames(person);
+document.getElementById("demo").innerHTML = props[0];
+</script>
+
+</body>
+</html>

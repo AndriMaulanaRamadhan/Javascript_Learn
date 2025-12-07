@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The getOwnPropertyDescriptor() Method</h2>
+
+<p>Object.getOwnPropertyDescriptor() returns the descriptor of a property.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Get Properties
+let descriptor = Object.getOwnPropertyDescriptor(person, "age");
+document.getElementById("demo").innerHTML = descriptor.value + " " + descriptor.writable;
+</script>
+
+</body>
+</html>

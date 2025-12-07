@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Operators</h1>
+<h2>Nullish Coalescing</h2>
+<h2>The ?? Operator</h2>
+
+<p>The ?? operator returns the right operand when the left operand is nullish (null or undefined), otherwise it returns the left operand.</p>
+
+<p id="demo"></p>
+
+<script>
+let name = null;
+let text = "missing";
+let result = name ?? text;
+
+document.getElementById("demo").innerHTML = "The name is " + result; 
+</script>
+
+</body>
+</html>

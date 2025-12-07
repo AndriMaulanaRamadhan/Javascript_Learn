@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+<h2>The \p Metacharacter</h2>
+
+<p>The \p{Unicode property} metacharacter matches any character with a Unicode property.</p>
+
+<p id="demo"></p>
+
+<script>
+let text1 = "A";
+let text2 = "Ж";
+let pattern = /\p{Script=Latin}/u;
+
+result1 = pattern.test(text1);
+result2 = pattern.test(text2);
+
+document.getElementById("demo").innerHTML = text1 + " is " + result1 + ", " + text2 + " is " + result2;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+<h2>The \W Metacharacter</h2>
+
+<p>A global search for non-word characters:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Give 100%!";
+let pattern = /\W/g;
+let result = text.match(pattern);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

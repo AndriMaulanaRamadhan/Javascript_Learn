@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+<h2>Groups Modifier (?flag)</h2>
+
+<p>A case insenisitive search for "W3Schools tutorials":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "W3Schools Tutorials.";
+const pattern = /(?i:W3Schools) tutorials/i;
+let result = text.match(pattern);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

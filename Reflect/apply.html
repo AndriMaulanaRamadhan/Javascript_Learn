@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+<h2>The apply() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Function
+function greet(message) {
+  return message + ", " + this.name;
+}
+
+// Create an Object
+const person = {name: "Jan"};
+
+// Apply the Function to the Object
+let msg = greet.apply(person, ["Hello"]);
+
+document.getElementById("demo").innerHTML = msg;
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Promise Object</h1>
+<h2>The then() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Promise Object
+let myPromise = new Promise(function(myResolve, myReject) {
+  let result = false;
+
+// Code that might take some time goes here
+
+  if (result == true) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+// Using then()
+myPromise.then(x => myDisplay(x), x => myDisplay(x));
+
+// Funtion to run when Promise is settled:
+function myDisplay(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+</script>
+
+</body>
+</html>

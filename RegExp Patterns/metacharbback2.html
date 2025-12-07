@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+<h2>The \B Metacharacter</h2>
+
+<p>Search for the characters "LO" and return the first position where it is present, NOT in the beginning of a word:</p>
+
+<p><span id="demo"></span></p>
+
+<script>
+let text = "HELLO, LOOK AT YOU!"; 
+let pattern = /\BLO/;
+let result = text.search(pattern);
+
+document.getElementById("demo").innerHTML = "Found in position: " + result;
+</script>
+
+</body>
+</html>

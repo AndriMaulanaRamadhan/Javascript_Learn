@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>The lastIndex property specifies the index at which to start the next match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in Spain stays mainly in the plain";
+let pattern = /ain/g;
+
+let result = "";
+while (pattern.test(text)==true)  {
+  result += "Found at position " + pattern.lastIndex + "<br>";
+}
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

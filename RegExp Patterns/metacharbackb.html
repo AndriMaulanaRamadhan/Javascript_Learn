@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+<h2>The [\b] Metacharacter</h2>
+
+<p>Find the position of a backspace character:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Visit W3Schools.\bLearn JavaScript."; 
+let pattern = /[\b]/;
+let result = text.search(pattern);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
