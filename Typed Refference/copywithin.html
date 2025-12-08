@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The copyWithin() Method</h2>
+
+<p>The copyWithin() method copies array elements to another position in an array.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const myArr = Int32Array.of(10,20,30,40,50,60);
+myArr.copyWithin(2, 0);
+
+document.getElementById("demo").innerHTML = "The value of the element with index 3 is: " + myArr.at(3)
+</script>
+
+</body>
+</html>

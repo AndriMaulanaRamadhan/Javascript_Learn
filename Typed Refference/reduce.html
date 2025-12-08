@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The reduce() Method</h2>
+
+<p>Subtract the numbers in the array from the first number:</p>
+
+<p id="demo"></p>
+
+<script>
+// Reducer Function
+function myFunc(total, num) {
+  return total - num;
+}
+
+// Create a Typed Array
+const myArr = Int32Array.of(40, 100, 1, 5, 25, 10);
+
+// Reduce the Array to a Number
+let number = myArr.reduce(myFunc);
+
+document.getElementById("demo").innerHTML = number;
+</script>
+
+</body>
+</html>

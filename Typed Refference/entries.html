@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The entries() Method</h2>
+
+<p>The entries() method returns an Iterator object with the key/value pairs from an array.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Typed Array
+const myArr = Int32Array.of(10,20,30,40,50,60);
+const myIterator = myArr.entries();
+
+// List the Entries<br>
+let text = "";
+for (let x of myIterator) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

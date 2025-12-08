@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The includes() Method</h2>
+
+<p>The array includes an element with a value of 40:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Typed Array
+const myArr = Int16Array.from([10,15,20,25,30,35,40,45,50]);
+
+// Find the first element with a value of 20
+let result = myArr.includes(20);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript</h1>
+<h2>The prototype Property</h2>
+
+<p>The prototype property allows you to add new properties and methods to existing objects.</p>
+
+<p>Add a salary to all employees:</p>
+
+<p id="demo"></p>
+
+<script>
+function employee(name, jobtitle, born) {
+  this.name = name;
+  this.jobtitle = jobtitle;
+  this.born = born;
+}
+employee.prototype.salary = 2000;
+
+const fred = new employee("Fred Flintstone", "Caveman", 1970);
+document.getElementById("demo").innerHTML = fred.salary;
+</script>
+
+</body>
+</html>

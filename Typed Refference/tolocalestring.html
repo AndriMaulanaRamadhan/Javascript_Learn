@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The toLocaleString() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Typed Array
+const myArr = Int16Array.from([1000,1500,2000,2500,3000]);
+
+// Convert to locale string
+let text = myArr.toLocaleString();
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

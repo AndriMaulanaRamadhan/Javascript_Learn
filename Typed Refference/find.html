@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The find() Method</h2>
+
+<p>The value of the first element that contains a value over 18 is:</p>
+<p id="demo"></p>
+
+<script>
+// Create a Typed Array
+const myArr = Int16Array.from([10,15,20,25,30,35,40,45,50]);
+
+// Find first element with a value over 18
+result = myArr.find((x) => x > 18);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

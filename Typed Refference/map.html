@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The map() Method</h2>
+
+<p>map() creates a new array from calling a function for every array element.</p>
+<p id="demo"></p>
+
+<script>
+// Create a Typed Array
+const myArr = Int16Array.from([4, 9, 16, 25]);
+
+// Create a new Typed Array
+const newArr = myArr.map(Math.sqrt);
+ 
+document.getElementById("demo").innerHTML = newArr;
+</script>
+
+</body>
+</html>

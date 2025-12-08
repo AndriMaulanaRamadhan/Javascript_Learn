@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The localeCompare() Method</h2>
+
+<p>localeCompare() returns one of 3 numbers indicating the sort order.</p> 
+
+<ul>
+  <li>-1 if sorted before</li>
+  <li>1 if sorted after</li>
+  <li>0 if equal</li> 
+</ul>
+
+<p>Compare "ab" with "cd":</p>
+
+<p id="demo"></p>
+
+<script>
+let text1 = "ab";
+let text2 = "cd";
+let result = text1.localeCompare(text2);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

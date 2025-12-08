@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Typed Arrays</h1>
+<h2>The some() Method</h2>
+
+<p>Does the array contain a value over 18?</p>
+<p id="demo"></p>
+
+<script>
+// Create a typed Array
+const myArr = Int16Array.from([10,15,20,25,30,35,40,45,50]);
+
+// Check if some element is over 18
+result = myArr.some((x) => x > 18);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
